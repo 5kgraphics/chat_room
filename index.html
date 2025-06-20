@@ -287,13 +287,11 @@
             overflow: hidden;
         }
         
-        .chat-embed-area {
-            flex: 1;
+        #chatango-container {
             width: 100%;
+            height: 500px;
             min-height: 500px;
-            padding: 0;
-            margin: 0;
-            position: relative;
+            border: none;
         }
         
         /* Footer */
@@ -413,6 +411,11 @@
             .chat-container {
                 min-height: 400px;
             }
+            
+            #chatango-container {
+                height: 400px;
+                min-height: 400px;
+            }
         }
         
         @media (max-width: 576px) {
@@ -464,8 +467,11 @@
     <div class="main-container">
         <div class="chat-container">
             <!-- Chatango Chat Embed -->
-            <div class="chat-embed-area">
-                <script id="cid0020000411421916661" data-cfasync="false" async src="//fharesidents.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">{"handle":"fharesidents","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10.26","q":"0084ef","r":100,"surl":0,"cnrs":"0.35","fwtickm":1}}</script>
+            <div id="chatango-container">
+                <script id="cid0020000411422390310" data-cfasync="false" async 
+                    src="//st.chatango.com/js/gz/emb.js">
+                    {"handle":"fharesidents","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10.26","q":"0084ef","r":100,"surl":0,"allowpm":0,"cnrs":"0.35","fwtickm":1}}
+                </script>
             </div>
         </div>
     </div>
