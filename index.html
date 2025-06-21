@@ -278,8 +278,6 @@
         
         /* Chat Container */
         .chat-container {
-    height: 400px;
-    padding: 0;
             background: white;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -290,13 +288,13 @@
             padding: 1rem;
         }
         
-        #tlkio {
-    height: 100%;
-    border: none;
+        /* Chatango Chat Styling */
+        .chatango-container {
             width: 100%;
-            height: 500px;
+            height: 600px;
             border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 auto;
         }
         
         /* Footer */
@@ -414,15 +412,11 @@
             }
             
             .chat-container {
-    height: 400px;
-    padding: 0;
                 min-height: 400px;
             }
             
-            #tlkio {
-    height: 100%;
-    border: none;
-                height: 400px;
+            .chatango-container {
+                height: 500px;
             }
         }
         
@@ -434,6 +428,10 @@
             
             .chat-hero h1 {
                 font-size: 1.8rem;
+            }
+            
+            .chatango-container {
+                height: 450px;
             }
         }
     </style>
@@ -474,9 +472,10 @@
     <!-- Main Chat Container -->
     <div class="main-container">
         <div class="chat-container">
-            <!-- TLK.io Chat Embed -->
-            <div id="tlkio" data-channel="fha_sharada_residents_chat" data-theme="theme--night" style="width:100%;height:500px;"></div>
-            <script async src="http://tlk.io/embed.js" type="text/javascript"></script>
+            <!-- Chatango Chat Embed -->
+            <div class="chatango-container">
+                <script id="cid0020000411419030696" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">{"handle":"fharesidents","arch":"js","styles":{"a":"3333ff","b":100,"c":"000000","d":"000000","k":"3333ff","l":"3333ff","m":"3333ff","p":"10","q":"3333ff","r":100,"fwtickm":1}}</script>
+            </div>
         </div>
     </div>
 
